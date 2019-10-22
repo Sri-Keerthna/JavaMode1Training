@@ -1,0 +1,24 @@
+package com.hcl.project;
+
+public class Customer {
+	private int custid;
+	private String custname;
+	private double annualpremium;
+	private double modalpremium;
+	private int paymentmode;
+	public Customer(int custid, String custname, double annualpremium, double modalpremium, int paymentmode) {
+		super();
+		this.custid = custid;
+		this.custname = custname;
+		this.annualpremium = annualpremium;
+		this.modalpremium = modalpremium;
+		this.paymentmode = paymentmode;
+	}
+	@Override
+	public String toString() {
+		return "Customer [custid=" + custid + ", custname=" + custname + ", annualpremium=" + annualpremium
+				+ ", modalpremium=" + modalpremium + ", paymentmode=" + paymentmode + "]";
+	}
+	
+	
+}

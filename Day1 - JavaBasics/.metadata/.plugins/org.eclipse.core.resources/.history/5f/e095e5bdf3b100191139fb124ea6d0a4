@@ -1,0 +1,44 @@
+package com.hcl.obj;
+
+public class Agent {
+	public StringBuilder show(String agentid,String name,int maritalstatus,String zipcode){
+		StringBuilder sbError=new StringBuilder(); 
+		boolean isValid=true; 
+		if(agentid.charAt(0)=='A')
+		{
+			sbError.append("Agent id must starts with A");
+			isValid=false;
+		}
+		if(name.indexOf(' ')==-1)
+		{
+			sbError.append("name must contain both first and last name");
+			isValid=false;
+		}
+		if(name.length()<=20)
+		{
+			sbError.append("name should not exceed 20 chars ");
+			isValid=false;
+		}
+		if(maritalstatus==1||maritalstatus==0)
+		{
+			sbError.append("marital status must be 0 or 1");
+			isValid=false;
+		}
+		if(zipcode.length()==6)
+		{
+			sbError.append("ZIPCODE contains only 6 chars");
+			isValid=false;
+		}
+	}
+public static void main(String[] args) {
+	String agentid, name,zipcode;
+	int maritalstatus;
+	agentid= "A100";
+	name="Sri";
+	maritalstatus=0;
+	zipcode="641602";
+	StringBuilder sbRes=new Agent().show(agentid,name,maritalstatus,zipcode);
+	System.out.println(sbRes);
+	
+}
+}

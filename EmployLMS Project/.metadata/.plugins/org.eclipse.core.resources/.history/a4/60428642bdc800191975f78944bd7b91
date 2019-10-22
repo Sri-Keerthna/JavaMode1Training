@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+.flex-container{
+display: flex;
+flex-wrap:wrap;
+background-color:pink;
+}
+
+.flex-container>div{
+margin:10px;
+padding:20px;
+font-size:20px;width:50%;
+background-color:white;
+}
+.flex-container>div1{
+margin:5px;
+padding:20px;
+font-size:20px;width:100%;
+align-items:center;
+line-height:75px;
+flex-direction:column;
+background-color:white;
+}
+.flex-container>div2{
+margin:5px;
+padding:20px;
+font-size:20px;
+text-align:center;width:100%;
+line-height:75px;
+flex-direction:column;
+background-color:white;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1><b>Employee Dashboard : Sections</b></h1>
+<div class="flex-container">
+<div>
+<jsp:include page="MyDetails.jsp"/>
+</div>
+<div>
+<jsp:include page="MyManager.jsp"/> 
+</div>
+</div>
+
+<div1 class="flex-container">
+<div1>
+<a href="MyLeave.jsp">My Leave Applications Section</a>
+</div1>
+</div1>
+
+<div2 class="flex-container">
+<div2>
+<a href="EmployPendingLeave.jsp">My Reporting Employee's Pending Leave Applications Section</a>
+</div2>
+</div2>
+</body>
+</html>

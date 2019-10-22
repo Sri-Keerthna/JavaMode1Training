@@ -1,0 +1,27 @@
+package com.hcl.java;
+
+public class Switch2 {
+		public void check(String opt){
+			switch(opt.toUpperCase()){
+			case "INSERT":
+				System.out.println("Insert operation");
+				break;
+			case "DELETE":
+				System.out.println("Delete operation");
+				break;
+			case "UPDATE":
+				System.out.println("Updating operation");
+				break;
+				default:
+			System.out.println("invalid value");
+			break;
+				}
+		}
+public static void main(String[] args) {
+	String op="InserT";	
+	new Switch2().check(op);	
+}
+}
+		
+
+

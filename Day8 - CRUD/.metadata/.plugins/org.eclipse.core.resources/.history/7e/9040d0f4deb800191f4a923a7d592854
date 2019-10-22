@@ -1,0 +1,13 @@
+package com.hcl.jdbc;
+
+import java.util.Scanner;
+
+public class UserAuth {
+public static void main(String[] args) {
+	String user,pwd;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter username and password");
+	user=sc.nextLine();
+	pwd=sc.nextLine();
+}
+}

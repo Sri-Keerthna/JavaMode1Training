@@ -1,0 +1,15 @@
+package com.hcl.java;
+
+public class CtoK {
+	public void kelvin(double c){
+		double k;
+		k=c+273;
+		System.out.println("KELVIN VALUE IS"+k);
+		
+	}
+public static void main(String[] args) {
+double c=37;	
+CtoK obj=new CtoK();
+obj.kelvin(c);
+}
+}

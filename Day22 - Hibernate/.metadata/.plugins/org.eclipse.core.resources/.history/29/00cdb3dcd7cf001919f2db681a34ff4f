@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="AddRooms.jsp" name="productForm">
+Rooms :
+<select name="Room" id="dropdown">
+<option value="dropdown">Please select one</option>
+<option value="R001">R001</option>
+<option value="R002">R002</option>
+<option value="R003">R003</option>
+<option value="R004">R004</option>
+<option value="R005">R005</option>
+<option value="R006">R006</option>
+<option value="R007">R007</option>
+<option value="R008">R008</option>
+<option value="R009">R009</option>
+<option value="R010">R010</option>
+</select><br/><br/>
+Type :
+<select name="Type" id="dropdown">
+<option value="dropdown">Please select one</option>
+<option value="Single">Single</option>
+<option value="Double">Double</option>
+</select><br/><br/>
+Status :
+<input type="text" name="Status" value="Available" readonly="readonly"/><br/><br/>
+Cost Per Day :
+<input type="number" name="CostPerDay"/><br/><br/>
+
+<input type="submit" name="click"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+*{
+box-sizing:border-box;
+}
+div.container{
+width:100%;
+border:3px pink;
+}
+div.box{
+box-sizing:border-box;
+width:50%
+border:50px pink;
+float:center;
+}
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1><b>Employee Dashboard : Sections</b></h1>
+<div class="container">
+<div class="box" >
+<jsp:include page="MyDetails.jsp"/>
+</div>
+<div class="box">
+<jsp:include page="MyManager.jsp"/> 
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+</body>
+</html>

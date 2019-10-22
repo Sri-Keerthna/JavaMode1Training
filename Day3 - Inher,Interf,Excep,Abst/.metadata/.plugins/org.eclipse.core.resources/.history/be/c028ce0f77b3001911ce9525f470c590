@@ -1,0 +1,24 @@
+package com.hcl.ex;
+class First{
+	public void show(){
+		System.out.println("show method from first");
+	}
+}
+class Second extends First{
+	public void show(){
+		System.out.println("show method from second");
+	}
+}
+public class Quiz1 {
+public static void main(String[] args) {
+	First ob1=new First();
+	Second ob2;
+	try {
+		ob2 = (Second)ob1;
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	ob2.show();
+}
+}

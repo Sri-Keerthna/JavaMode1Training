@@ -1,0 +1,13 @@
+package com.hcl.employ;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainDept {
+	public static void main(String[] args) {
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("dept.xml");
+		DataInsertDao d=(DataInsertDao)ctx.getBean("myDept");
+		d.insertEmploy();
+		System.out.println("Record Inserted");
+	}
+}

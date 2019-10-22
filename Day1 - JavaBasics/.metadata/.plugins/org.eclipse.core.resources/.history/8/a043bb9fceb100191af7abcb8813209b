@@ -1,0 +1,16 @@
+package com.hcl.java;
+
+public class FactFor {
+	public void calc(int n){
+		int f=1;
+		for(int i=n;i<=n;i--)
+		{
+			f=f*i;
+		}
+		System.out.println("fact "+f);
+	}
+public static void main(String[] args) {
+	int n=5;
+	new Fact().calc(n);
+}
+}

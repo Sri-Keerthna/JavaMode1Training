@@ -1,0 +1,13 @@
+package com.hcl.beans;
+
+import java.io.PrintWriter;
+
+public class UpdateAccount {
+	PrintWriter out=response.getWriter();
+	int accountNo=Integer.parseInt(request.getParameter("accountNo"));
+	String city=request.getParameter("city");
+	String state=request.getParameter("state");
+	String result=AccountBAL.updateAccountBal(accountNo, city, state);
+	
+	out.println(result);
+}

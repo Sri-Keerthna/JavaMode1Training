@@ -1,0 +1,15 @@
+package com.hcl.beans;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class EMSDao {
+public String EmployeeDetails(){
+Connection con=DaoConnection.getConnection();
+String cmd="select *from Employ";
+PreparedStatement pst=con.prepareStatement(cmd);
+ResultSet rs=pst.executeQuery();
+while(rs.next()){
+}
+}

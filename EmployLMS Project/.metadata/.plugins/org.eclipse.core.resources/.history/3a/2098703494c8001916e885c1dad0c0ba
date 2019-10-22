@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="MyDetails.jsp">
+<%
+int emp_Id=Integer.parseInt((String)session.getAttribute("user"));
+%>
+<p align="left">
+Employee ID:<%=emp_Id%>
+<%EmployeeDetails obj=new EmployeeDetails(); %>
+<%obj=new EMSDao().SearchEmp(emp_Id); %><br/>
+Full Name :<%=obj.getEmpName() %><br/>
+Email Address :<%=obj.getEmpEmail() %><br/>
+Mobile Number :<%=obj.getEmpMobNo() %><br/></p>
+<p align="right">
+Date Joined :<%=obj.getD() %><br/>
+Department :<%=obj.getEmpDeptName() %><br/></p>
+<center>
+Available Leave Balance :<%obj.getEmpLeaveBal() %>
+</center>
+</form>
+</body>
+</html>

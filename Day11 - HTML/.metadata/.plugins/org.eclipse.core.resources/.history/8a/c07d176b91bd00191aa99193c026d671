@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmCalc">
+<center>
+<table border="3">
+<tr>
+<th>First no</th>
+<td> 
+<input type="text" name="txtFirstNo"/>
+</td>
+</tr>
+
+<tr>
+<th>Sec no</th>
+<td>
+<input type="text" name="txtSecondNo"/>
+</td>
+</tr>
+
+<tr>
+<th>Result</th>
+<td>
+<input type="text" name="Result"/>
+</td>
+</tr>
+
+</table>
+</center></form>
+</body>
+</html>

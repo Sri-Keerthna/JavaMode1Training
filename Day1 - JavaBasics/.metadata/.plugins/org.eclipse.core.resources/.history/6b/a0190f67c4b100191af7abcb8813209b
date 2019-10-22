@@ -1,0 +1,8 @@
+package com.hcl.java;
+
+public class CalcDemo {
+
+	public static void main(String[] args) {
+		int a,b;
+	}
+}

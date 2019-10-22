@@ -1,0 +1,25 @@
+package com.hcl.inh;
+
+import com.hcl.boxing.C1;
+import com.hcl.boxing.C2;
+
+public class Quiz2 {
+	class First{
+		public First(){
+			System.out.println("base class method");
+		}
+	}
+	
+	class Second extends First{
+		public void display(){
+			System.out.println("derived class method");
+		}
+	}
+	
+	public class Quiz13 {
+		public static void main(String[] args) {
+			new Second();
+		}
+
+}
+}

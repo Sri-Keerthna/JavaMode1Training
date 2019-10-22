@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmData">
+<center>
+First Name :
+<input type="text" name="firstName"/>
+<br/><br/>
+<input type="submit" name="Show"/>
+</center>
+</form>
+</body>
+</html>

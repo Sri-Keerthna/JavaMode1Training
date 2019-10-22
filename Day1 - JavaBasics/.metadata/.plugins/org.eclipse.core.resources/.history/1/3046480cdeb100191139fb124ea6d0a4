@@ -1,0 +1,17 @@
+package com.hcl.java;
+
+public class StrFuncDemo {
+public static void main(String[] args) {
+	String str="welcome to java programming";
+	System.out.println("length of string " +str.length());
+	System.out.println("Char at 5th position "+str.charAt(5));
+	System.out.println("index of 'a' is "+str.indexOf('a'));
+	System.out.println("last occurence of 'a' "+str.lastIndexOf('a'));
+	System.out.println("Substring "+str.substring(3, 9));
+	String s1="Hello", s2="Hello";
+	System.out.println(s1.equals(s2));
+	String s3="java", s4="programming";
+	System.out.println(s3.compareTo(s4));
+	
+}
+}

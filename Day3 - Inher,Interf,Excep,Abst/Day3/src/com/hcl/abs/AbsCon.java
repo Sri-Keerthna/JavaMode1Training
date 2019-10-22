@@ -1,0 +1,16 @@
+package com.hcl.abs;
+
+public class AbsCon {
+  /**
+  * Abstraction using constructor.
+  * @param args has an arg
+  */
+  public static void main(String[] args) {
+    Emp ob1 = new Janani(1,"janani",4325);
+    Emp ob2 = new Raghu(2,"Raghu",5725);
+    Emp[] arrEmp = new Emp[]{ob1,ob2};
+    for (Emp emp : arrEmp) {
+      System.out.println(emp);
+    }
+  }
+}

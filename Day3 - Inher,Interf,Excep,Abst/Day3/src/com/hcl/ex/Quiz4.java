@@ -1,0 +1,34 @@
+package com.hcl.ex;
+
+public class Quiz4 {
+
+		public void calc(double radius)
+		{
+			double area;
+			area=Math.PI*Math.pow(radius, 2);
+			System.out.println("AREA OF CIRCLE"+area);
+		}
+		public void square(double r)
+		{
+			double a;
+			a=Math.pow(r, 2);
+			System.out.println(a);
+		}
+		
+		public static void main(String[] args) {
+			double radius=12.2;
+			int a=-128,s,x;
+			double d;
+			s=Math.abs(a);
+			System.out.println(s);
+			x=Math.max(10, 20);
+			System.out.println(x);
+			d=Math.floor(234.8);
+			System.out.println(d);
+			Quiz4 obj= new Quiz4();
+			obj.calc(radius);
+			obj.square(10);
+		}
+
+}
+

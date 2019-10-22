@@ -1,0 +1,10 @@
+package com.hcl.collections;
+
+public class Customer {
+	private int custid;
+	private String custname;
+	private double annualpremium;
+	private double modalpremium;
+	private int paymentmode;
+	
+}

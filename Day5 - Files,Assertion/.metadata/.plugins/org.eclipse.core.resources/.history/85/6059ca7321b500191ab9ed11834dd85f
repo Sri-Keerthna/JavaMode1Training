@@ -1,0 +1,32 @@
+package com.hcl.asr;
+
+import java.io.Serializable;
+
+public class Student implements Serializable { 
+  int sno;
+  String name;
+  String city;
+  transient double cgp;
+  /** 
+* @param sno has the sno.
+* @param name has the name
+* @param city has the city
+* @param cgp has the cgp
+*/
+  
+  public Student(int sno, String name, String city, double cgp) { 
+    super();
+    this.sno = sno;
+    this.name = name;
+    this.city = city;
+    this.cgp = cgp;
+  }
+
+  @Override
+  public String toString() {
+    return "Student [sno=" + sno + ", name=" + name + ", city=" + city + ", cgp=" + cgp + "]";
+  }
+
+  public static void main(String[] args) {
+  }
+}

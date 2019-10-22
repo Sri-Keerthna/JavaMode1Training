@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hcl.enums.Enum2"/>
+<fullyQualifiedTypeName name="com.hcl.enums.Student"/>
+<fullyQualifiedTypeName name="com.hcl.enums.Second"/>
+<fullyQualifiedTypeName name="com.hcl.enums.First"/>
+<fullyQualifiedTypeName name="com.hcl.enums.Employ"/>
+<fullyQualifiedTypeName name="com.hcl.abs.Anubhav"/>
+<fullyQualifiedTypeName name="com.hcl.abs.Training"/>
+<fullyQualifiedTypeName name="com.hcl.abs.SaiKrishna"/>
+<fullyQualifiedTypeName name="com.hcl.abs.Animal"/>
+<fullyQualifiedTypeName name="com.hcl.abs.Employ"/>
+<fullyQualifiedTypeName name="com.hcl.intf.ITraining"/>
+<fullyQualifiedTypeName name="com.hcl.intf.Test"/>
+<fullyQualifiedTypeName name="com.hcl.intf.IFirst"/>
+<fullyQualifiedTypeName name="com.hcl.intf.ISecond"/>
+<fullyQualifiedTypeName name="com.hcl.intf.IThird"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="com.hcl.ex.Second"/>
+<fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="com.hcl.intf.Employ"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.OBJ_ADAPTER"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+</qualifiedTypeNameHistroy>

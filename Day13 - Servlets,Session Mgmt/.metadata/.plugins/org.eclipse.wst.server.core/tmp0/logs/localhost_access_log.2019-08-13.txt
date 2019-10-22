@@ -1,0 +1,7 @@
+127.0.0.1 - - [13/Aug/2019:17:49:22 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:17:49:25 +0530] "GET /ServletDemos/EmployShowServlet HTTP/1.1" 500 1883
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:17:51:01 +0530] "GET /ServletDemos/EmployShowServlet HTTP/1.1" 500 1883
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:17:58:55 +0530] "GET /ServletDemos/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:17:58:56 +0530] "GET /ServletDemos/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:17:58:56 +0530] "GET /ServletDemos/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:17:58:57 +0530] "GET /ServletDemos/EmployShowServlet HTTP/1.1" 500 1883

@@ -1,0 +1,17 @@
+package com.hcl.enums;
+
+public class Enum3 {
+
+	public static void show(String...name){
+		for (String s : name) {
+			System.out.println(s+"  ");
+		}
+		System.out.println();
+	}
+	public static void main(String[] args) {
+		show();
+		show("visha","prem");
+		show("visha","prem","janani","jehanat");
+		show("rishab","satya","sai kumar");
+	}
+}

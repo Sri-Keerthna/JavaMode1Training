@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmData">
+<center>
+<tr>
+<th><b>Name Form</b></th>
+</tr>
+First Name :
+<input type="text" name="firstName"
+onfocus="gotCursor"
+onblur="lostCursor"
+/><br/><br/>
+Last Name :
+<input type="text" name="lastName"
+/><br/><br/>
+Full Name :
+<input type="text" name="fullName"
+/><br/><br/>
+</center>
+</form>
+</body>
+</html>

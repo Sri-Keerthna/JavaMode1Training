@@ -1,0 +1,52 @@
+package com.hcl.inventory;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.hcl.bank.AccountBAL;
+import com.hcl.bank.Accounts;
+
+/**
+ * Servlet implementation class SearchStockServlet
+ */
+public class SearchStockServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SearchStockServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String stockid=request.getParameter("stockid");
+		Stock objaccounts=StockBAL.searchStockBal(stockid);
+		PrintWriter out=response.getWriter();
+		if(objaccounts!=null){
+			out.println("Item Name "+objaccounts.getItemName()+"<br/>");
+			out.println("Price "+objaccounts.getPrice()+"<br/>");
+			out.println("Quantity Available "+objaccounts.getQuantityAvail()+"<br/>");
+		}else{
+			out.println("Stock ID Not Found");
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

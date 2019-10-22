@@ -1,0 +1,13 @@
+package com.hcl.hib;
+
+public class AddSubject {
+
+	private int year;
+	private String instructor;
+	private String subject;
+	private int theory;
+	private int practical;
+	
+	
+	
+}

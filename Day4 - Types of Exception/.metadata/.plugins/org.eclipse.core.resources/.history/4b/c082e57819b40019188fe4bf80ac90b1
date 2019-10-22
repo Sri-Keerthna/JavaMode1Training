@@ -1,0 +1,20 @@
+package com.hcl.Ex;
+
+public class Ex2 {
+public static void main(String[] args) {
+	try{
+		System.out.println("A");
+		throw new NullPointerException(); //it will throw ths exception bcz it is inside the try block
+	}
+	catch(ArithmeticException e){
+		System.out.println(e);
+	}
+	catch(NullPointerException e){
+		//System.out.println("error");
+		throw new NumberFormatException();
+	}catch (NumberFormatException e) {
+		// TODO: handle exception
+		System.out.println("rethrown error");
+	}
+}
+}

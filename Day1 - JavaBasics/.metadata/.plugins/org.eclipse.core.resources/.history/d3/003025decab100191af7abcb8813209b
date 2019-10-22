@@ -1,0 +1,14 @@
+package com.hcl.java;
+
+public class LoopDemo {
+	public void show(int n){
+		int i=0;
+		while(i<n){
+			System.out.println("sri");
+			i++;
+		}
+	}
+public static void main(String[] args) {
+	new LoopDemo().show(n);
+}
+}

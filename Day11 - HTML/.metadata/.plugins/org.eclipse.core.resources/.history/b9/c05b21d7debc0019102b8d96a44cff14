@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="personalData"style=color:#0900C4;
+font:Helvetica 22pt;border:1px solid black;">
+<b>Welcome to personal details page</b><br/>
+<p>
+Hi I am Sri..from TamilNadu
+</p>
+</div><br/><br/>
+</body>
+</html>

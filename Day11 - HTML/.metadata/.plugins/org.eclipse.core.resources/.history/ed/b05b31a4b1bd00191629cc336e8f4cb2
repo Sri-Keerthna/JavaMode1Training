@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+function gotCursor(){
+	//alert("Cursor Placed");
+	frmData.firstName.value="";
+}
+function gotCursor(){
+	//alert("Cursor Placed");
+	frmData.lastName.value="";
+}
+function lostCursor(){
+	alert("Cursor Left Current Control");
+	frmData.fullName.value="";
+	var firstName;
+	var LastName;
+	var FullName=firstName.concat(lastName);
+}

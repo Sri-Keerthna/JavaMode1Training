@@ -1,0 +1,20 @@
+package com.hcl.intf;
+
+import org.omg.CORBA.OBJ_ADAPTER;
+
+public class Quiz2 {
+public static void main(String[] args) {
+	Object[] arr=new Object[]
+			{
+					12,"welcome",12.5,"hcl",'A',"java",true,11,11.6,"bangalore"
+			};
+	for (Object object : arr) {
+		if(object instanceof Integer){
+			System.out.println(object);
+		}
+		if(object instanceof String){
+			System.out.println(object);
+	}
+}
+}
+}

@@ -1,0 +1,39 @@
+package com.hcl.ex;
+
+class InvalidUserNameException extends Exception {
+	public InvalidUserNameException(String error) {
+		super(error);
+	}
+}
+
+class InvalidEmailException extends Exception {
+	public InvalidEmailException(String error) {
+		super(error);
+	}
+}
+
+public class Ex3 {
+
+	public void checkemail(String email) throws InvalidEmailException, InvalidUserNameException {
+		// boolean flag=true;
+		if (email.indexOf("@") == -1) {
+			// flag=false;
+			throw new InvalidEmailException("Invalid Email@not found");
+		}
+		if (email.indexOf("@") > 12) {
+			// flag=false;
+			throw new InvalidUserNameException("Invalid user");
+		}
+		System.out.println("email " + email);
+	}
+
+	public static void main(String[] args) {
+		String email = "hcl@gmail.com";
+		try {
+			new Ex3().checkemail(email);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

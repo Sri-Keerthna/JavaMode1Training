@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.j2ee.server:HibCollegeProject" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:DeptCRUBHib" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:HotelMgmt" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:DeptCrud" serverId="Tomcat v8.0 Server at localhost"/>
+</modules>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center> 
+<a href="CreateAccount.html">Create Account</a>
+&nbsp;&nbsp;
+<a href="SearchAccount.html">Search Account</a>
+&nbsp;&nbsp;
+<a href="UpdateAccount.html">Update Account</a>
+&nbsp;&nbsp;
+<a href="CloseAccount.html">Close Account</a>
+&nbsp;&nbsp;
+<a href="DepositAccount.html">Deposit Account</a>
+&nbsp;&nbsp;
+<a href="WithdrawAccount.html">Withdraw Account</a>
+&nbsp;&nbsp;
+</center>
+</body>
+</html>

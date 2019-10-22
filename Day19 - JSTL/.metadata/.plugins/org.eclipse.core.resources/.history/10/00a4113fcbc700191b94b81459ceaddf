@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="EmployInsert.jsp">
+<center>
+Employ No :
+<input type="text" name="empno"/><br/>
+Employ Name :
+<input type="text" name="name"/><br/>
+Department :
+<input type="text" name="dept"/><br/>
+Designation :
+<input type="text" name="desig"/><br/>
+Salary :
+<input type="text" name="basic"/><br/>
+<input type="submit" value="Insert"/><br/><hr/>
+</center>
+</form>
+</body>
+</html>

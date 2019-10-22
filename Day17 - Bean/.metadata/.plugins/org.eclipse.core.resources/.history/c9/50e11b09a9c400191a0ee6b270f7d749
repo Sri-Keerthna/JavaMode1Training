@@ -1,0 +1,12 @@
+package com.hcl.beans;
+
+public class CreateAccount {
+private String firstName;
+private String lastName;
+private String city;
+private String state;
+private int amount;
+private String cheqFacil;
+private String accountType;
+
+}

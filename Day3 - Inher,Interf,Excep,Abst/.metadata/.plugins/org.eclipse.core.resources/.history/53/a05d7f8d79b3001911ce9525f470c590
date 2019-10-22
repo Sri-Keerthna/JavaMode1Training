@@ -1,0 +1,23 @@
+package com.hcl.ex;
+class c1{
+	int a,b;
+	public c1(){
+		a=5;
+		b=8;
+	}
+	@Override
+	public String toString() {
+		return "c1 [a=" + a + ", b=" + b + "]";
+	}
+}
+class c2 extends c1{
+	public c2(int a,int b){
+		
+	}
+}
+public class Quiz3 {
+public static void main(String[] args) {
+	c2 obj=new c2(12,5);
+	System.out.println(obj);
+}
+}

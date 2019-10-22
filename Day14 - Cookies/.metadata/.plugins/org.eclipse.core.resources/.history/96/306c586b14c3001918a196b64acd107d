@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="EmployServlet">
+<table>
+<tr>
+Employee ID:
+<input type="text" name="ID"/><br/><br/>
+Employee Name :
+<input type="text" name="ID"/><br/><br/>
+Hobbies :
+<input type="checkbox" name="Hobbies" value="Playing Indoor Games"/><br/><br/>
+<input type="checkbox" name="Hobbies" value="Playing Outdoor Games"/><br/><br/>
+<input type="checkbox" name="Hobbies" value="Singing"/><br/><br/>
+<input type="checkbox" name="Hobbies" value="Dancing"/><br/><br/>
+<input type="checkbox" name="Hobbies" value="Listening Music"/><br/><br/>
+<input type="checkbox" name="Hobbies" value="Reading Books"/><br/><br/>
+Gender :
+<input type="Radio" name="Gender" value="Male"/><br/><br/>
+<input type="Radio" name="Gender" value="Female"/><br/><br/>
+City:
+<input type="text" name="city"/><br/><br/>
+State :
+<input type="text" name="state"/><br/><br/>
+Country :
+<input type="text" name="country"/><br/><br/>
+</tr>
+</table>
+</form>
+</body>
+</html>

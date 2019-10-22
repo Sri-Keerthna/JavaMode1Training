@@ -1,0 +1,54 @@
+package com.hcl.project;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomerDAO {
+	static List<Customer> lstcustomer=null;
+	static {
+		lstcustomer=new ArrayList<Customer>();
+	}
+	
+	public String addCustomerDAO(Customer c) {
+		lstcustomer.add(c);
+		return "customer created successfully";
+	}
+	public Customer searchCustomerDAO(int custid) {
+		Customer objcustomer = null;
+		for(Customer c:lstcustomer) {
+			if(c.getCustId()==custid) {
+				objcustomer=c;
+			}
+		}
+		return objcustomer;
+	}
+	public List<Customer> showCustomerDAO() {
+		return lstcustomer;
+	}
+	public String updateCustomerDAO(Customer obj) {
+		Customer c=searchCustomerDAO(obj.getCustId());
+		if(c!=null){
+			for (Customer c1 : lstcustomer) {
+				if(c1.getCustId()==obj.getCustId()){
+					c1.setCustname(obj.getCustname());
+					c1.setAnnualpremium(obj.getAnnualpremium());
+					c1.setModalpremium(obj.getModalpremium());
+					c1.setPaymentmode(obj.getPaymentmode());
+				}
+			}
+			return "records update";
+		} else {
+			return "customer no not found";
+		}
+	}
+	
+	public String deleteCustomerDAO(int CustId){
+		Customer customer=searchCustomerDAO(CustId);
+		if(customer!=null) {
+			lstcustomer.remove(customer);
+			return "customer remove";
+		} else {
+			return "customer no not found";
+		}
+	}
+}

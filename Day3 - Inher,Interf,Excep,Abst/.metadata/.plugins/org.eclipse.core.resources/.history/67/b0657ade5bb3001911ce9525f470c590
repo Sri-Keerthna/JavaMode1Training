@@ -1,0 +1,47 @@
+package com.hcl.abs;
+abstract   class Animal{
+	abstract void name();
+	abstract void type();
+}
+
+class Lion extends Animal{
+
+	@Override
+	void name() {
+		// TODO Auto-generated method stub
+		System.out.println("Name is lion");
+	}
+
+	@Override
+	void type() {
+		// TODO Auto-generated method stub
+		System.out.println("type is wild animal");
+	}
+}
+class Crocodile extends Animal{
+
+	@Override
+	void name() {
+		// TODO Auto-generated method stub
+		System.out.println("Name is CROCODILE");
+	}
+
+	@Override
+	void type() {
+		// TODO Auto-generated method stub
+		System.out.println("type is wild animal");
+	}
+	
+}
+public class AbsTest {
+public static void main(String[] args) {
+	Animal arr[]=new Animal[]{
+			new Lion(),
+			new Crocodile()
+	};
+	for (Animal animal : arr) {
+		System.out.println(animal);
+	}
+}
+	
+}

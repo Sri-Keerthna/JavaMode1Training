@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmAtt">
+<center>
+Sri Keerthna :
+<input type="checkbox"name="chkSri"/>
+<br/><br/>
+Nivetha :
+<input type="checkbox"name="chkNivetha"/>
+<br/><br/>
+Visalakshi :
+<input type="checkbox"name="chkVisalakshi"/>
+<br/><br/>
+Kiruba :
+<input type="checkbox"name="chkKiruba"/>
+<br/><br/>
+<span is="res">
+</span>
+</center></form>
+</body>
+</html>

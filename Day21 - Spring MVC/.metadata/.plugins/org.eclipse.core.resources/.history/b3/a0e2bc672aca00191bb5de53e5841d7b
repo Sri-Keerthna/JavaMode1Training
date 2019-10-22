@@ -1,0 +1,5 @@
+package com.hcl.list;
+@Controller
+public class NameListController {
+@request
+}

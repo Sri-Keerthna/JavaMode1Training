@@ -1,0 +1,19 @@
+package com.hcl.beans;
+
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class UpdateAccount {
+	public static void main(String[] args) {
+		int accountNo;
+		String city,state;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter AccountNo ");
+		accountNo=Integer.parseInt(sc.nextLine());
+		System.out.println("Enter the City ");
+		city=sc.nextLine();
+		System.out.println("Enter the State ");
+		state=sc.nextLine();
+		System.out.println(AccountBAL.updateAccountBal(accountNo, city, state));
+}
+}

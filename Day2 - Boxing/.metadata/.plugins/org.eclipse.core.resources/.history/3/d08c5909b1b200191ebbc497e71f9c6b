@@ -1,0 +1,22 @@
+package com.hcl.inh;
+
+public class Quiz2 {
+	class First{
+		public First(){
+			System.out.println("base class method");
+		}
+	}
+	
+	class Second extends First{
+		public void display(){
+			System.out.println("derived class method");
+		}
+	}
+	
+	public class Quiz13 {
+		public static void main(String[] args) {
+			new Second();
+		}
+
+}
+}

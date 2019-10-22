@@ -1,0 +1,12 @@
+package com.hcl.project;
+
+public class Customer {
+	private int custId;
+	private String custName;
+	private double annualPremium;
+	private double modalPremium;
+	private int paymentMode;
+	
+		
+	
+}

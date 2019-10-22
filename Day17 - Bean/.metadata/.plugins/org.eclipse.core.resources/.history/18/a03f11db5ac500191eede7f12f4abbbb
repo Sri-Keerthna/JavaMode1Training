@@ -1,0 +1,18 @@
+package com.hcl.beans;
+
+public class SearchInventory {
+	private String stockid;
+
+	public String getStockid() {
+		return stockid;
+	}
+
+	public void setStockid(String stockid) {
+		this.stockid = stockid;
+	}
+	
+	public Stock searchInventory() {
+		return StockBAL.searchStockBal(stockid);
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.hcl.java;
+
+public class Tests {    
+	static int x = 20; 
+	int x1=3;
+	    int i;
+	    
+	    Tests() { 
+	    x=x1;
+	    i = x; }  
+	    public static void main(String[] args) {  
+	    	
+	         Tests t = new Tests(); 
+	         System.out.println("x = " + t.x); 
+	    } 
+	} 

@@ -1,0 +1,69 @@
+package com.hcl.hib;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class College {
+	public String insertSubject(AddSubject addSubject) {
+		SessionFactory sf=HibernateUtil.getConnection();
+		Session s=sf.openSession();
+		Transaction t=s.beginTransaction();
+		s.save(addSubject);
+		t.commit();
+		return "Record Inserted";
+	}
+	
+	public List<String> instructorList(){
+		SessionFactory sf=HibernateUtil.getConnection();
+		Session s=sf.openSession();
+		Query q=s.createQuery("select distinct instructor from AddSubject");
+		List<String> lst=q.list();
+		return lst;
+		}
+
+		public List<String> subjectList(String instructor){
+		SessionFactory sf=HibernateUtil.getConnection();
+		Session s=sf.openSession();
+		Query q=s.createQuery("select distinct subject from AddSubject where instructor='"+instructor+"'");
+		List<String> lst=q.list();
+		return lst;
+		}
+	
+		public String generateCourseNo(){
+			ApplicationContext ctx=new ClassPathXmlApplicationContext("org/me/College/application-context.xml");
+			HibernateTemplate ht=(HibernateTemplate)ctx.getBean("hibernateTemplate");
+		    List<CourseList> lstCourse=ht.find("from CourseList");
+		    
+		    String courseno="";
+		    if(lstCourse.size()==0){
+		    	courseno="C001";
+		    	return courseno;
+		    }
+		    else {
+		    	for(CourseList c : lstCourse){
+		    		courseno=c.getCourseno();
+		    	}
+		    	 int cno= Integer.parseInt(courseno.substring(1));
+		    	 cno++;
+		    	 if(cno>=1&&cno<=9){
+		    		 courseno="C00"+cno;
+		    	 }
+		    	 if(cno>9&&cno<99)
+		    	 {
+		    		 courseno="C0"+cno;
+		    	 }
+		    	 if(cno>99&&cno<999)
+		    	 {
+		    		 courseno="C"+cno;
+		    	 }
+		    	 System.out.println("Course No is " +courseno);
+		    	 return courseno;
+		    }
+	}
+}
+
+

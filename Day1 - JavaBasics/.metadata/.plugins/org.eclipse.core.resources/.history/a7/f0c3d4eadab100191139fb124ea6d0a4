@@ -1,0 +1,28 @@
+package com.hcl.java;
+
+public class Prime {
+	public void show(int n){
+		int i=1;
+		boolean flag=true;
+		while(i<=n/2){
+			if(n%i==0)
+			{
+				flag=false;
+			}
+			i++;
+		}
+		if(flag==false)
+		{
+			System.out.println("not prime");
+		}
+		else
+		{
+			System.out.println("prime");
+		}
+	}		
+public static void main(String[] args) {
+	int n=2;
+	new Prime().show(n);
+	
+}
+}

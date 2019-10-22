@@ -1,0 +1,26 @@
+package com.hcl.beans;
+
+public class PlaceOrder {
+private String stockid;
+private int QuantityOrd;
+
+public String getStockid() {
+	return stockid;
+}
+
+public void setStockid(String stockid) {
+	this.stockid = stockid;
+}
+
+public int getQuantityOrd() {
+	return QuantityOrd;
+}
+
+public void setQuantityOrd(int quantityOrd) {
+	QuantityOrd = quantityOrd;
+}
+
+public String placeOrder(){
+	return StockBAL.PlaceOrderBal(stockid, QuantityOrd);
+}
+}

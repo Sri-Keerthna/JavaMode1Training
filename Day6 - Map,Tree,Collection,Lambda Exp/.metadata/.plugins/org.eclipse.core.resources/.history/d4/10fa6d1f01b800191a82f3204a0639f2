@@ -1,0 +1,45 @@
+package com.hcl.project;
+
+import java.util.List;
+
+public class StudentBAL {
+StringBuilder sb=new StringBuilder();
+public boolean addStudentBAL(Student objstudent) throws StudentException {
+	boolean isAdded=true;
+	
+	if(objstudent.getSno()<=0) {
+		sb.append("student no cannot be zero or ngative \r\n");
+		isAdded=false;
+	}
+	if(objstudent.getName().length()<=3) {
+		sb.append("student name shd be more than 3 chars \r\n");
+		isAdded=false;
+	}
+	if(objstudent.getCity().length()<=3) {
+		sb.append("city name shd be more than 3 chars \r\n");
+		isAdded=false;
+	}
+	if(objstudent.getCgp()<0) {
+		sb.append("cgp non-ngative \r\n");
+		isAdded=false;
+	}
+	if(isAdded==false) {
+		throw new StudentException(sb.toString());
+	} else {
+		new StudentDAO().addStudentDAO(objstudent);
+		}
+	return isAdded;
+}
+public Student searchStudentBAL(int sno) {
+	return new StudentDAO().searchStudentDAO(sno);
+	}
+public List<Student> showStudentBAL() {
+	return new StudentDAO().showStudentDAO();
+}
+public String updateStudentBal(Student objstudent) {
+	return new StudentDAO().updateStudentDAO(objstudent);
+	}
+public String deleteStudentBAL(int sno) {
+	return new StudentDAO().deleteStudentDAO(sno);
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hcl.boxing.StuSearch"/>
+<fullyQualifiedTypeName name="com.hcl.boxing.Student"/>
+<fullyQualifiedTypeName name="com.hcl.boxing.ConTest"/>
+<fullyQualifiedTypeName name="java.util.TimeZone"/>
+<fullyQualifiedTypeName name="com.hcl.boxing.TimeZone"/>
+<fullyQualifiedTypeName name="com.hcl.boxing.StDemo"/>
+<fullyQualifiedTypeName name="com.hcl.boxing.Cricket"/>
+<fullyQualifiedTypeName name="com.hcl.boxing.c2"/>
+<fullyQualifiedTypeName name="com.hcl.boxing.Quiz8"/>
+<fullyQualifiedTypeName name="p1.Othercls"/>
+<fullyQualifiedTypeName name="p2.OtherPackage"/>
+<fullyQualifiedTypeName name="p1.OtherPackage"/>
+<fullyQualifiedTypeName name="p1.WithinCls"/>
+<fullyQualifiedTypeName name="com.hcl.inh.CustomString"/>
+</qualifiedTypeNameHistroy>

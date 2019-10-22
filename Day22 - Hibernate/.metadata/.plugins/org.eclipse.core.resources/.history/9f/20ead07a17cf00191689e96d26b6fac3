@@ -1,0 +1,78 @@
+<%@page import="com.hcl.hib.College"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+College c=new College();
+String fid=c.feedbackId();
+session.setAttribute("instructor", "none");
+%>
+<form method="get" name="frmFeedback" action="AddFeedback.jsp">
+FeedBack Id:
+<input type="text" name="fid" value="<%=fid %>" readonly="readonly"/><br/><br/>
+Student Name:
+<input type="text" name="studentName"/><br/><br/>
+Instructor:
+<select name="instructor" onchange="change();"><br/><br/>
+<option value="dropdown">Please Select One</option><br/><br/>
+<%
+List<String> lst=new College().instructorList();
+for(String s : lst){
+%>
+<option value="<%=s %>"> <%=s %></option>
+<%
+}%>
+</select>
+<br/><br/>
+Please Give Your FeedBack
+
+<form method="get" action="FeedBackConfirm.jsp">
+<br/><br/>
+Select Subject:
+<select name="subject">
+<option value="dropdown"></option>
+<%
+String ins=request.getParameter("instructor");
+session.setAttribute("instructor", ins);
+List<String> lst1=new College().subjectList(ins);
+for(String s:lst1){
+%>
+<option value="<%=s %>"> <%=s%></option>
+<%
+}
+%>
+</select>
+<br/><br/>
+
+ <input type="radio" id="Choice1"
+     name="feedback" value="Excellent">
+    <label for="Choice1">Excellent</label>
+
+    <input type="radio" id="Choice2"
+     name="feedback" value="Good">
+    <label for="Choice2">Good</label>
+
+    <input type="radio" id="Choice3" 
+     name="feedback" value="Adequate">
+    <label for="Choice3">Adequate</label>
+
+    <input type="radio" id="Choice4"
+     name="feedback" value="Inadequate">
+    <label for="Choice4">Adequate</label>
+	<input type="submit" value="Show" />
+</form>
+<script>
+function change(){
+document.frmFeedback.submit();
+}
+</script>
+
+</body>
+</html>

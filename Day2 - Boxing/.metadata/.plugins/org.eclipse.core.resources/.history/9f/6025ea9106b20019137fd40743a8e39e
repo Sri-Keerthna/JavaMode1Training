@@ -1,0 +1,23 @@
+package com.hcl.boxing;
+
+public class TimeZone {
+
+	int h1,h2,m1,m2,h,m;
+
+	public TimeZone() {
+		this.h1=3;
+		this.h2=2;
+		this.m1=40;
+		this.m2=35;		
+	}
+	
+	public void calc(){
+		m=m1+m2;
+		m=m-60;
+		h=h1+h2;
+		System.out.println("time is "+h+"hrs "+ m+"mins");	
+	}
+	public static void main(String[] args) {
+		new TimeZone().calc();
+	}
+}

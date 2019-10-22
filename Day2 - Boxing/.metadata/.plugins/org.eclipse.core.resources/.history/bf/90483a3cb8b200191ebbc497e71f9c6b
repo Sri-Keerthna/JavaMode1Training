@@ -1,0 +1,29 @@
+package com.hcl.inh;
+
+ class A {
+
+	public void show(){
+		System.out.println("xxx");
+	}
+	private void shows(int a){
+		System.out.println("value is "+a);
+	}
+}
+class B extends A{
+	protected void display(){
+		System.out.println("yyy");
+	}
+	void dis(){
+		System.out.println("vfv");
+	}
+}
+class AccessModif
+{
+	public static void main(String[] args) {
+	int x=10;	
+	B b=new B();
+	b.display();
+	b.dis();
+	b.show();
+	}
+}

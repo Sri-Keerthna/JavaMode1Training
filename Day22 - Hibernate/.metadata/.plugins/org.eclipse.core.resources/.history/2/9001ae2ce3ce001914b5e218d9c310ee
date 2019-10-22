@@ -1,0 +1,91 @@
+<%@page import="com.hcl.hib.College"%>
+<%@page import="com.hcl.hib.AddSubject"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="AddSubject.jsp" name="productForm">
+
+Subjects :
+ <select name="subject" id="dropdown" onchange="change()">
+<option value="dropdown">Please select one</option>
+<option value="Web Technology">Web Technology</option>
+<option value="Core Java">Core Java</option>
+<option value="DAA">DAA</option>
+<option value="Data Structures">Data Structures</option>
+<option value="DBMS">DBMS</option>
+</select><br/><br/>
+
+Theory :
+ <input type="text" name="theory" id="theory" readonly="readonly" /> <br/><br/>
+Practical : 
+<input type="text" name="practical" id="practical" readonly="readonly" /> <br/><br/>
+Year :
+<input type="number" name="year"> <br/><br/>
+Instructor :
+<input type="text" name="instructor"> <br/><br/>
+<input type="submit" value="Click"> <br/><br/>
+</form>
+<%-- <%
+        String colour = request.getParameter("colour");
+        out.println(colour);
+        %> --%>
+        <script>
+        function change(){
+        var dval= document.getElementById("dropdown").value;
+        
+       
+        if(dval =="Web Technology"){
+        	//alert("hi");
+        	productForm.theory.value="42";
+        	productForm.practical.value="14";
+        }
+        if(dval =="Core Java"){
+        	//alert("hi");
+        	productForm.theory.value="90";
+        	productForm.practical.value="50";
+        }
+        if(dval =="DAA"){
+        	//alert("hi");
+        	productForm.theory.value="69";
+        	productForm.practical.value="41";
+        }
+        
+        if(dval =="Data Structures"){
+        	//alert("hi");
+        	productForm.theory.value="69";
+        	productForm.practical.value="41";
+        }
+        
+        if(dval =="DBMS"){
+        	//alert("hi");
+        	productForm.theory.value="107";
+        	productForm.practical.value="93";
+        }
+        }
+    <%--     document.getElementById("dropdown").value = '<% out.print(colour); %>'; --%>
+    
+    <%
+	if(request.getParameter("year") != null && 
+		request.getParameter("instructor") != null &&
+		request.getParameter("subject") != null && 
+		request.getParameter("theory") != null &&
+		request.getParameter("practical") != null) {
+				AddSubject as=new AddSubject();
+				as.setYear(Integer.parseInt(request.getParameter("year")));
+				as.setInstructor(request.getParameter("instructor"));
+				as.setSubject(request.getParameter("subject"));
+				as.setTheory(Integer.parseInt(request.getParameter("theory")));
+				as.setPractical(Integer.parseInt(request.getParameter("practical")));
+				College crud=new College();
+				out.println(crud.insertSubject(as));
+			}
+%>
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+package com.hcl.collections;
+
+import java.io.FileInputStream;
+import java.util.Scanner;
+
+public class ScanFile {
+public static void main(String[] args) {
+	FileInputStream fin=new FileInputStream("D:/hcljava/Day5/Day5/src/com/hcl/collections/ArrIntEx.java");
+	Scanner sc=new Scanner(fin);
+	while(sc.hasNextLine()){
+		System.out.println(sc.hasNextLine());
+	}
+	sc.close();
+	fin.close();
+}
+}

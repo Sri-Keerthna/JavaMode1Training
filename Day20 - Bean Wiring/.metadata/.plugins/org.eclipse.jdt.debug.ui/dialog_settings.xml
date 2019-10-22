@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=HelloWorld/src\/main\/java&amp;lt;com.hcl.hello{MainProg.java[MainProg&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=CalcDemo/src\/main\/java&amp;lt;com.hcl.calc{App.java[App&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=CalcDemo/src\/main\/java&amp;lt;com.hcl.calc{MainProg.java[MainProg&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BeanWiring/src\/main\/java&amp;lt;com.hcl.beans{App.java[App&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BeanWiring/C:\/Users\/coalesce\/.m2\/repository\/junit\/junit\/3.8.1\/junit-3.8.1.jar&amp;lt;junit.swingui(TestRunner.class[TestRunner&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="388" key="DIALOG_X_ORIGIN"/>
+			<item value="39" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

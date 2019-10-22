@@ -1,0 +1,7 @@
+package com.hcl.enums;
+enum Student{
+	Anisha, Laksh,Ri
+}
+public class Enum1 {
+
+}

@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+function lostCursor(){
+	var fname=frmDta.firstName.value="";
+	var lname=frmData.lastName.value="";
+	var FullName=fname.concat(lname);
+}

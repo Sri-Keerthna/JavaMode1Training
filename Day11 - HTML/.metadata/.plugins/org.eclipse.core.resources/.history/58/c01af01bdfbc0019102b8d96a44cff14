@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="personalData"style=color:#0900C4;
+font:Helvetica 22pt;border:1px solid black;">
+<b>Welcome to personal details page</b><br/>
+<p>
+Hi I am Sri..from TamilNadu
+</p>
+</div><br/><br/>
+
+<div id="academicData"color=#FF0000;
+border:1px dotted black;">
+<b>Welcome to Academic details page </b><br/>
+<p>
+Hi I dID MY UG in Sns Institute
+</p>
+</div><br/><br/>
+</body>
+</html>

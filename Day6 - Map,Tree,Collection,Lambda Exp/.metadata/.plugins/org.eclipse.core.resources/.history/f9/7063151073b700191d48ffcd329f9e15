@@ -1,0 +1,29 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class LambdaEmp {
+  public static void main(String[] args) {
+    List<Emp> list=new ArrayList<Emp>();
+    list.add(new Emp(1,"sri",40000));
+    list.add(new Emp(2,"visha",45000));
+    list.add(new Emp(3,"nivi",55000));
+    //Collections.sort(list,(p1,p2)->{
+    //return p1.name.compareTo(p2.name);
+    //});
+    Collections.sort(list,(p1,p2)->{
+      return (int)(p1.salary - p2.salary);//since it is double
+    });
+    System.out.println("**sorted by salary wise**");
+     for (Emp e : list) {
+       System.out.println(e);
+     }
+System.out.println(" ");
+System.out.println("display salary above 50000");
+list.stream().filter(p->p.salary>=50000).forEach(x->{
+System.out.println(x);
+});
+}
+}

@@ -1,0 +1,16 @@
+package com.hcl.abs;
+
+
+	
+		
+public class AbsCon {
+public static void main(String[] args) {
+	Employ ob1=new Janani(1,"janani",4325);
+	Employ ob2=new Raghu(2,"Raghu",5725);
+	
+	Employ[] arrEmploy=new Employ[]{ob1,ob2};
+	for(Employ employ: arrEmploy){
+		System.out.println(employ);
+	}
+}
+}

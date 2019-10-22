@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="MenuServlet">
+<center> 
+<a href="CreateAccountServlet.java">Create Account</a>
+&nbsp;&nbsp;
+<a href="SearchAccountServlet.java">Search Account</a>
+&nbsp;&nbsp;
+<a href="UpdateAccountServlet.java">Update Account</a>
+&nbsp;&nbsp;
+<a href="CloseAccountServlet.java">Close Account</a>
+&nbsp;&nbsp;
+</body>
+</html>

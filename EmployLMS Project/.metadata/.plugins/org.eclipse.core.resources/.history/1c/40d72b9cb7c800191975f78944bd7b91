@@ -1,0 +1,16 @@
+package com.hcl.beans;
+
+import java.sql.Date;
+
+public class Employee {
+	private int EMP_ID;
+	private String EMP_NAME;
+	private String EMP_EMAIL;
+	private double EMP_MOB_NO;
+	private String EMP_DPT_NAME;
+	private Date EMP_DATE_JOINED;
+	private int EMP_MGR_ID;
+	private int EMP_LEAVE_BALANCE;
+	
+	
+}
